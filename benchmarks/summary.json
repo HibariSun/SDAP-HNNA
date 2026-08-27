@@ -1,0 +1,26 @@
+[
+  {
+    "dataset": "psnod",
+    "source": "PSnoD(2022)/PSnoD-master/input_data",
+    "snoRNAs": 220,
+    "diseases": 27,
+    "associations": 459,
+    "notes": "Disease ids are MeSH ids from the PSnoD source files."
+  },
+  {
+    "dataset": "gbdtsvm",
+    "source": "GBDTSVM（2024）/gbdtsvm-main/Data",
+    "snoRNAs": 335,
+    "diseases": 112,
+    "associations": 1010,
+    "notes": "Disease ids are names from disease_name.csv; snoRNA similarity is cosine similarity from snoRNA_features.csv."
+  },
+  {
+    "dataset": "gcnmf_sda",
+    "source": "GCNMF-SDA(2025)/GCNMF-SDA-main/data",
+    "snoRNAs": 307,
+    "diseases": 54,
+    "associations": 780,
+    "notes": "Disease ids are disease names from GCNMF-SDA adj_index.csv."
+  }
+]

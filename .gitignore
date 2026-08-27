@@ -1,0 +1,51 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging artifacts
+build/
+dist/
+*.egg-info/
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Experiment outputs and logs
+results/
+outputs/
+logs/
+tmp/
+*.log
+
+# Model checkpoints and local model downloads
+checkpoints/
+models/
+*.pt
+*.pth
+*.ckpt
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Operating-system files
+.DS_Store
+Thumbs.db
+desktop.ini
+

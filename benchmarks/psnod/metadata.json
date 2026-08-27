@@ -1,0 +1,8 @@
+{
+  "dataset": "psnod",
+  "source": "PSnoD(2022)/PSnoD-master/input_data",
+  "snoRNAs": 220,
+  "diseases": 27,
+  "associations": 459,
+  "notes": "Disease ids are MeSH ids from the PSnoD source files."
+}

@@ -1,0 +1,8 @@
+{
+  "dataset": "gbdtsvm",
+  "source": "GBDTSVM（2024）/gbdtsvm-main/Data",
+  "snoRNAs": 335,
+  "diseases": 112,
+  "associations": 1010,
+  "notes": "Disease ids are names from disease_name.csv; snoRNA similarity is cosine similarity from snoRNA_features.csv."
+}

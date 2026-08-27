@@ -1,0 +1,10 @@
+disease_id,disease_name,preferred_source,description
+Hepatocellular Carcinoma,Hepatocellular Carcinoma,DOID/MeSH/MedGen,
+Intracranial Aneurysm,Intracranial Aneurysm,DOID/MeSH/MedGen,
+Colorectal Cancer,Colorectal Cancer,DOID/MeSH/MedGen,
+Early Hepatocellular Carcinoma,Early Hepatocellular Carcinoma,DOID/MeSH/MedGen,
+West Nile Virus Infection,West Nile Virus Infection,DOID/MeSH/MedGen,
+Non-Small Cell Lung Cancer,Non-Small Cell Lung Cancer,DOID/MeSH/MedGen,
+Uterine Leiomyoma,Uterine Leiomyoma,DOID/MeSH/MedGen,
+Glioma,Glioma,DOID/MeSH/MedGen,
+Lung Non-Small Cell Carcinoma,Lung Non-Small Cell Carcinoma,DOID/MeSH/MedGen,

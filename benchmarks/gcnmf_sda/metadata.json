@@ -1,0 +1,8 @@
+{
+  "dataset": "gcnmf_sda",
+  "source": "GCNMF-SDA(2025)/GCNMF-SDA-main/data",
+  "snoRNAs": 307,
+  "diseases": 54,
+  "associations": 780,
+  "notes": "Disease ids are disease names from GCNMF-SDA adj_index.csv."
+}

@@ -1,0 +1,72 @@
+# PyTorch深度学习超图神经网络 - snoRNA-Disease关联预测
+# HGNN-SDA 环境依赖
+
+# ============================================================
+# 核心依赖
+# ============================================================
+
+# 深度学习框架
+torch>=2.0.0
+torchvision>=0.15.0
+
+# 数据处理
+numpy>=1.21.0
+pandas>=1.3.0
+
+# 机器学习工具
+scikit-learn>=1.0.0
+
+# 可视化
+matplotlib>=3.5.0
+seaborn>=0.12.0
+
+# 进度条
+tqdm>=4.62.0
+
+# ============================================================
+# 序列相似性计算（用于构建snoRNA相似性矩阵）
+# ============================================================
+
+# Smith-Waterman序列比对（用于snoRNA序列相似性计算）
+parasail>=1.3.0
+
+# ============================================================
+# RNA预训练模型（可选，用于提取snoRNA序列特征）
+# ============================================================
+
+# RNAErnie等RNA语言模型
+multimolecule>=0.08
+
+# ============================================================
+# 安装说明
+# ============================================================
+# 
+# 1. CPU版本（适合大多数情况）:
+#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#    pip install -r requirements.txt
+#
+# 2. GPU版本（需要NVIDIA GPU和CUDA 11.8）:
+#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+#    pip install -r requirements.txt
+#
+# 3. GPU版本（CUDA 12.1）:
+#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#    pip install -r requirements.txt
+#
+# 4. Apple Silicon (M1/M2/M3/M4) Mac:
+#    pip install torch torchvision
+#    pip install -r requirements.txt
+#
+# 5. RNAErnie模型下载（可选，用于序列特征提取）:
+#    模型会在首次运行时自动从HuggingFace下载
+#    或手动下载到本地后修改 script/extract_rnaernie_sno.py 中的路径
+#
+# ============================================================
+# 快速安装（一键命令）
+# ============================================================
+#
+# Linux/Mac (GPU):
+#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118 && pip install -r requirements.txt
+#
+# Linux/Mac (CPU):
+#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu && pip install -r requirements.txt
