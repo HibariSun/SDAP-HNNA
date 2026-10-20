@@ -1,6 +1,12 @@
 # SDAP-MHNN
 
-SDAP-MHNN is a multi-hypergraph neural network for predicting snoRNA–disease associations. The implementation combines association-derived Gaussian interaction profile kernel (GIPK) similarities with snoRNA sequence and disease semantic similarities, and incorporates pretrained snoRNA and disease representations through late feature fusion.
+SDAP-HNNA is a deep learning model for predicting snoRNA–disease associations. Three hypergraphs are constructed in this model for employing higher-order relationships among snoRNAs and among diseases, and binary associations between snoRNAs and diseases. A novel feature learning framework alternately leveraging hypergraph neural network and multi-head cross-attention is designed to generate high-level features.
+
+<p align="center">
+  <img src="assets/sdap-mhnn-framework.png" alt="Overall framework of SDAP-MHNN" width="100%">
+</p>
+
+<p align="center"><em>Figure 1. Overall framework of SDAP-MHNN.</em></p>
 
 The repository provides the model implementation, reproducible 10-fold cross-validation splits, and four normalized snoRNA–disease association datasets.
 
