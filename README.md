@@ -1,4 +1,4 @@
-# SDAP-MHNN
+# SDAP-HNNA
 
 SDAP-HNNA is a deep learning model for predicting snoRNA–disease associations. Three hypergraphs are constructed in this model for employing higher-order relationships among snoRNAs and among diseases, and binary associations between snoRNAs and diseases. A novel feature learning framework alternately leveraging hypergraph neural network and multi-head cross-attention is designed to generate high-level features.
 
