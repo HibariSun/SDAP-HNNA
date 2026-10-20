@@ -6,7 +6,7 @@ SDAP-HNNA is a deep learning model for predicting snoRNA–disease associations.
   <img src="assets/sdap-mhnn-framework.png" alt="Overall framework of SDAP-MHNN" width="100%">
 </p>
 
-<p align="center"><em>Figure 1. Overall framework of SDAP-MHNN.</em></p>
+<p align="center"><em>Figure 1. Overall framework of SDAP-HNNA.</em></p>
 
 The repository provides the model implementation, reproducible 10-fold cross-validation splits, and four normalized snoRNA–disease association datasets.
 
