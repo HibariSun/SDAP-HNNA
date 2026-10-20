@@ -13,7 +13,7 @@ The repository provides the model implementation, reproducible 10-fold cross-val
 ## Repository structure
 
 ```text
-SDAP-MHNN/
+SDAP-HNNA/
 ├── main.py                    # Training and evaluation entry point
 ├── model.py                   # SDAP-MHNN architecture
 ├── train_eval.py              # Cross-validation, training, and metrics
