@@ -159,4 +159,4 @@ Machine-readable BibTeX records for all four publications are provided in [`CITA
 
 ## Citation
 
-If you use this code or the processed datasets, please cite the accompanying SDAP-MHNN manuscript. The final BibTeX entry can be added here after publication.
+If you use this code or the processed datasets, please cite the accompanying SDAP-HNNA manuscript. The final BibTeX entry can be added here after publication.
