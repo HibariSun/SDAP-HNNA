@@ -3,7 +3,7 @@
 SDAP-HNNA is a deep learning model for predicting snoRNA–disease associations. Three hypergraphs are constructed in this model for employing higher-order relationships among snoRNAs and among diseases, and binary associations between snoRNAs and diseases. A novel feature learning framework alternately leveraging hypergraph neural network and multi-head cross-attention is designed to generate high-level features.
 
 <p align="center">
-  <img src="assets/sdap-mhnn-framework.png" alt="Overall framework of SDAP-MHNN" width="100%">
+  <img src="assets/sdap-hnna-framework.png" alt="Overall framework of SDAP-HNNA" width="100%">
 </p>
 
 <p align="center"><em>Figure 1. Overall framework of SDAP-HNNA.</em></p>
@@ -15,7 +15,7 @@ The repository provides the model implementation, reproducible 10-fold cross-val
 ```text
 SDAP-HNNA/
 ├── main.py                    # Training and evaluation entry point
-├── model.py                   # SDAP-MHNN architecture
+├── model.py                   # SDAP-HNNA architecture
 ├── train_eval.py              # Cross-validation, training, and metrics
 ├── data_utils.py              # Dataset loading and similarity fusion
 ├── entity_cv.py               # Entity-level split and sampling utilities
@@ -43,7 +43,7 @@ SDAP-HNNA/
 | Dataset C (GBDTSVM) | `benchmarks/gbdtsvm/` | 335 | 112 | 1,010 | GBDTSVM [3] |
 | Dataset D (GCNMF-SDA) | `benchmarks/gcnmf_sda/` | 307 | 54 | 780 | GCNMF-SDA [4] |
 
-Each dataset directory contains the normalized inputs used by SDAP-MHNN:
+Each dataset directory contains the normalized inputs used by SDAP-HNNA:
 
 | File | Description |
 |---|---|
@@ -140,7 +140,7 @@ The `results/`, `outputs/`, log, cache, and checkpoint directories are excluded 
 
 - The default random seed is `42`.
 - The repository includes the saved 10-fold splits used for evaluation.
-- Use `--mode fixed` to run the predefined SDAP-MHNN configuration.
+- Use `--mode fixed` to run the predefined SDAP-HNNA configuration.
 - Do not reorder identifiers or matrix rows and columns when replacing data files.
 - Hardware and library versions can cause small numerical differences.
 
@@ -148,7 +148,7 @@ The `results/`, `outputs/`, log, cache, and checkpoint directories are excluded 
 
 The normalized files in Dataset A were derived from the dataset released with GL4SDA [1]. Datasets B-D were normalized from the datasets released with PSnoD [2], GBDTSVM [3], and GCNMF-SDA [4], respectively. The normalization performed for this repository does not change the stated provenance of the original data.
 
-When using the processed datasets, please cite the SDAP-MHNN work and the corresponding original publication:
+When using the processed datasets, please cite the SDAP-HNNA work and the corresponding original publication:
 
 1. Massimo La Rosa, Antonino Fiannaca, Isabella Mendolia, Laura La Paglia, and Alfonso Urso. "GL4SDA: Predicting snoRNA-disease associations using GNNs and LLM embeddings." *Computational and Structural Biotechnology Journal*, 27:1023-1033, 2025. [https://doi.org/10.1016/j.csbj.2025.03.014](https://doi.org/10.1016/j.csbj.2025.03.014)
 2. Zijie Sun, Qinlai Huang, Yuhe Yang, Shihao Li, Hao Lv, Yang Zhang, Hao Lin, and Lin Ning. "PSnoD: identifying potential snoRNA-disease associations based on bounded nuclear norm regularization." *Briefings in Bioinformatics*, 23(4):bbac240, 2022. [https://doi.org/10.1093/bib/bbac240](https://doi.org/10.1093/bib/bbac240)
